@@ -1,0 +1,25 @@
+X-Sample-Origin: synthetic-training-sample (not a real message; reserved .example domains and RFC 5737 test IPs)
+Return-Path: <karen.whitfield.ceo@freemail-provider.example>
+Received: from mail-gw.contoso-logistics.example (10.20.0.5) by mbx01.contoso-logistics.example with ESMTPS; Wed, 14 Oct 2026 15:02:44 +0000
+Received: from mta12.freemail-provider.example (mta12.freemail-provider.example [198.51.100.120]) by mail-gw.contoso-logistics.example with ESMTP; Wed, 14 Oct 2026 15:02:42 +0000
+Authentication-Results: mail-gw.contoso-logistics.example; spf=pass (sender IP is 198.51.100.120) smtp.mailfrom=freemail-provider.example; dkim=pass header.d=freemail-provider.example; dmarc=pass (p=none) header.from=freemail-provider.example
+From: "Karen Whitfield (CEO)" <karen.whitfield.ceo@freemail-provider.example>
+Reply-To: <k.whitfield.private@secure-inbox.example>
+To: <finance.ops@contoso-logistics.example>
+Subject: Quick favor - confidential
+Date: Wed, 14 Oct 2026 15:02:30 +0000
+Message-ID: <CAF8e21b7d@mta12.freemail-provider.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi,
+
+Are you at your desk? I'm heading into a board meeting and can't take calls.
+I need you to handle something discreetly and quickly. I want to send gift
+cards to a few key clients as a thank-you. Please buy 6 gift cards of $200
+each and send me the card numbers and PINs by reply. I will reimburse you
+today. Please keep this between us until the announcement.
+
+Thanks,
+Karen
+Sent from my mobile

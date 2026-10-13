@@ -1,0 +1,40 @@
+sample_id,type,indicator_defanged,source,context,confidence
+S01,domain,micros0ft-support[.]example,header,From domain; zero replaces letter o in microsoft,high
+S01,domain,verify-mailer[.]example,header,Return-Path domain; differs from From,high
+S01,domain,securemail-center[.]example,header,Reply-To domain; third unrelated domain,high
+S01,url,hxxps://login[.]micros0ft-support[.]example/signin?session=8f3a1c&redirect=owa,body,real target of the fake verify link,high
+S01,ip,198.51.100.77,header,oldest Received hop (message submission client),medium
+S01,ip,203.0.113.45,header,relay smtp-out server,medium
+S01,email,no-reply@micros0ft-support[.]example,header,From address,high
+S01,email,helpdesk.recovery@securemail-center[.]example,header,Reply-To address,high
+S02,domain,northwind-supp1ies[.]example,header,From and Return-Path domain; digit 1 replaces letter l,high
+S02,email,billing@northwind-supp1ies[.]example,header,From address,high
+S02,ip,203.0.113.88,header,sending IP; SPF softfail,medium
+S02,hash,95e58c8b1fc09a8df464f2fabf5f244ac17dd2c28c6ee7145069012b70374074,attachment,SHA-256 of Invoice_88231.pdf.html (harmless placeholder),high
+S02,filename,Invoice_88231.pdf.html,attachment,double extension disguising HTML as PDF,high
+S03,email,karen.whitfield.ceo@freemail-provider[.]example,header,free-mail address using CEO name,high
+S03,email,k.whitfield.private@secure-inbox[.]example,header,Reply-To address,high
+S03,domain,secure-inbox[.]example,header,Reply-To domain,medium
+S03,ip,198.51.100.120,header,provider mail server IP (free-mail provider itself is not malicious),low
+S04,domain,parcel-tracking-center[.]example,header,From domain; generic tracking name,medium
+S04,url,hxxps://shrt[.]example/aB3dE9,body,shortened link hiding destination,medium
+S04,ip,203.0.113.150,header,sending IP; SPF softfail,medium
+R01,domain,access-accsecurity[.]com,header,From domain; impersonates Microsoft account team,high
+R01,domain,thcultarfdes[.]co[.]uk,header,Return-Path domain and sending server; no SPF,high
+R01,email,no-reply@access-accsecurity[.]com,header,From address,high
+R01,email,bounce@thcultarfdes[.]co[.]uk,header,Return-Path address,medium
+R01,email,sotrecognizd@gmail[.]com,header,Reply-To address and target of all mailto links,high
+R01,ip,89.144.44.2,header,oldest external Received hop; SPF none,medium
+R01,domain,thebandalisty[.]com,body,hidden image / likely tracking pixel host,medium
+R01,url,hxxp://thebandalisty[.]com/track/o43062rdzGz18708448Gdrw1821750fYo33632dSjh176,body,hidden 1x1 tracking pixel URL (visibility:hidden image),medium
+R02,domain,𝗹𝗮𝗻𝗱𝗮𝗹-client-48106818[.]𝗻𝗹,header,From domain written with Unicode bold lookalike letters,high
+R02,email,Landal-Gastenpanel@𝗹𝗮𝗻𝗱𝗮𝗹-client-48106818[.]𝗻𝗹,header,From address,high
+R02,domain,gasten-landal[.]nl,header,Reply-To domain; brand-themed lookalike,medium
+R02,email,no-reply@gasten-landal[.]nl,header,Reply-To address,medium
+R02,domain,civilsocietyroundtable[.]co[.]il,header,Return-Path domain; unrelated organization; may be abused so do not block blindly,medium
+R02,email,info@civilsocietyroundtable[.]co[.]il,header,Return-Path address,medium
+R02,ip,5.196.201.3,header,oldest external Received hop; SPF none; reverse DNS ip3.ip-5-196-201[.]eu,medium
+R02,domain,byunmedia[.]com,body,hosts the play button and the unsubscribe link and the hidden tracking pixel,high
+R02,url,hxxp://byunmedia[.]com/4qpLVK4606sjfV180yoiitqxrfw19ICEMJOSFXLTTDDL127587NUCI1137u1,body,play button target (Speel nu mee en win),high
+R02,url,hxxp://byunmedia[.]com/5gnXnN4606EykK180unrmvebqex19HKSLRUYGWJIPUJP127587IKRB1137l1,body,unsubscribe link target on the same domain,medium
+R02,url,hxxp://byunmedia[.]com/track/3GhfIJ4606qxzh180ijaiigteok19DWZPSAERQPXIJZT127587KKUE1137K1,body,hidden 1x1 tracking pixel,medium

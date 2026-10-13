@@ -1,0 +1,27 @@
+X-Sample-Origin: synthetic-training-sample (not a real message; reserved .example domains and RFC 5737 test IPs)
+Return-Path: <servicedesk@contoso-logistics.example>
+Received: from mbx01.contoso-logistics.example (10.20.0.30) by mbx02.contoso-logistics.example with ESMTPS; Fri, 16 Oct 2026 08:00:06 +0000
+Received: from smtp-relay.contoso-logistics.example (smtp-relay.contoso-logistics.example [10.20.0.25]) by mbx01.contoso-logistics.example with ESMTP; Fri, 16 Oct 2026 08:00:04 +0000
+Authentication-Results: mbx01.contoso-logistics.example; spf=pass smtp.mailfrom=contoso-logistics.example; dkim=pass header.d=contoso-logistics.example; dmarc=pass (p=reject) header.from=contoso-logistics.example
+From: "Contoso IT Service Desk" <servicedesk@contoso-logistics.example>
+To: <analyst.demo@contoso-logistics.example>
+Subject: URGENT: Scheduled password change reminder - 3 days left
+Date: Fri, 16 Oct 2026 08:00:00 +0000
+Message-ID: <20261016080000.2210@smtp-relay.contoso-logistics.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+
+This is the scheduled 90-day password rotation reminder. Your password will
+expire in 3 days. Please change it before then using the company single
+sign-on page:
+
+https://sso.contoso-logistics.example/password
+
+We will never ask for your current password by email or phone. If you have
+questions, open a ticket in the IT Service Desk portal or call the number on
+the intranet.
+
+IT Service Desk
+Contoso Logistics

@@ -1,0 +1,21 @@
+X-Sample-Origin: synthetic-training-sample (not a real message; reserved .example domains and RFC 5737 test IPs)
+Return-Path: <notify@parcel-tracking-center.example>
+Received: from mail-gw.contoso-logistics.example (10.20.0.5) by mbx01.contoso-logistics.example with ESMTPS; Thu, 15 Oct 2026 11:27:19 +0000
+Received: from relay3.parcel-tracking-center.example (unknown [203.0.113.150]) by mail-gw.contoso-logistics.example with ESMTP; Thu, 15 Oct 2026 11:27:17 +0000
+Authentication-Results: mail-gw.contoso-logistics.example; spf=softfail (domain does not designate 203.0.113.150 as permitted sender) smtp.mailfrom=parcel-tracking-center.example; dkim=none (message not signed); dmarc=none (no DMARC record found) header.from=parcel-tracking-center.example
+From: "ParcelTrack Delivery" <notify@parcel-tracking-center.example>
+To: <analyst.demo@contoso-logistics.example>
+Subject: Delivery attempt failed - reschedule now (tracking PT-4471920)
+Date: Thu, 15 Oct 2026 11:27:10 +0000
+Message-ID: <PT4471920.relay3@parcel-tracking-center.example>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear customer,</p>
+<p>We could not deliver your parcel (PT-4471920) because the address was incomplete.
+Your parcel will be returned within 24 hours unless you confirm your details and pay a
+small redelivery fee of $1.99.</p>
+<p><a href="https://shrt.example/aB3dE9">Reschedule delivery</a></p>
+<p>ParcelTrack Delivery Team</p>
+</body></html>
